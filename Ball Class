@@ -1,0 +1,31 @@
+package edu.macalester.comp124.breakout;
+
+import acm.graphics.GOval;
+
+/**
+ * This class is a ball which is used for the program. It takes in a
+ * value for the radius of the ball.
+ * Created by Mack on 3/12/2015.
+ */
+public class Ball extends GOval {
+    private double radius;
+
+    /**
+     * Creates a ball for the game
+     * @param radius Radius of the ball
+     */
+    public Ball(double radius){
+        super(2*radius,2*radius);//Calling constructor for GOval using width & height
+        //TODO: Make the ball filled in
+        setFilled(true);
+        this.radius=radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+}
